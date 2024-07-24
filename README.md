@@ -28,4 +28,19 @@ apprendre vite
 ### javascript dans le navigateur
 ### javascript coté serveur
 
+### <script> </script>
+### mdn
+### variable const
 
+
+<script> 
+const a = 3 ;
+  let b=3 ;
+  b=4 ;
+  var (ancien)
+  const c = 2
+  const une_variable_plus_longue = "Ma super chaîne"
+let a = 2
+a = "Je suis une chaîne maintenant !"
+  backtick alt GR + 7  =`     `
+</script>
