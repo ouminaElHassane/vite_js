@@ -44,3 +44,27 @@ let a = 2
 a = "Je suis une chaîne maintenant !"
   backtick alt GR + 7  =`     `
 </script>
+function example() {
+    console.log(x); // undefined
+    // console.log(y); // ReferenceError: Cannot access 'y' before initialization
+    // console.log(z); // ReferenceError: Cannot access 'z' before initialization
+
+    var x = 1;
+    let y = 2;
+    const z = 3;
+
+    console.log(x); // 1
+    console.log(y); // 2
+    console.log(z); // 3
+
+    // Re-declaration examples:
+    var x = 10; // Allowed with var
+    // let y = 20; // SyntaxError: Identifier 'y' has already been declared
+    // const z = 30; // SyntaxError: Identifier 'z' has already been declared
+
+    // Assignment examples:
+    x = 100; // Allowed
+    y = 200; // Allowed
+    // z = 300; // TypeError: Assignment to constant variable.
+}
+example();
