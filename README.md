@@ -146,4 +146,35 @@ example();
       console.log('10', isPremier(10))
       console.log('11', isPremier(11))
       console.log('12', isPremier(12))
+-------------------------------------
+<script>
+        const isPremier =(n) => {
 
+                if (n < 2) {
+                    return false
+                }
+                for (let i = n - 1; i > 1; i--) {
+
+                    if (n % i === 0) {
+                        return false;
+                    }
+
+                }
+                return true
+        }
+
+        console.log('0', isPremier(0))
+        console.log('1', isPremier(1))
+        console.log('2', isPremier(2))
+        console.log('3', isPremier(3))
+        console.log('4', isPremier(4))
+        console.log('5', isPremier(5))
+        console.log('6', isPremier(6))
+        console.log('7', isPremier(7))
+        console.log('8', isPremier(8))
+        console.log('9', isPremier(9))
+        console.log('10', isPremier(10))
+        console.log('11', isPremier(11))
+        console.log('12', isPremier(12))
+
+    </script>
