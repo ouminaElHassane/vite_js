@@ -178,3 +178,101 @@ example();
         console.log('12', isPremier(12))
 
     </script>
+---------------------
+
+const isImPair =(n)=>!isPair(n)     
+
+equivalent à :
+
+const isImPair =(n)=>{
+return n%2!==0
+}
+
+-----------------
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page</title>
+    <script>
+        const isPremier = (n) => {
+
+            if (n < 2) {
+                return false
+            }
+            for (let i = n - 1; i > 1; i--) {
+
+                if (n % i === 0) {
+                    return false;
+                }
+
+            }
+            return true
+        }
+        const isPair = (n) => n % 2 === 0
+
+        const isImPair = (n) => !isPair(n)
+
+        const isImPair2 = (n) => {
+            return n % 2 !== 0
+        }
+
+        console.log('0', isPremier(0))
+        console.log('1', isPremier(1))
+        console.log('2', isPremier(2))
+        console.log('3', isPremier(3))
+        console.log('4', isPremier(4))
+        console.log('5', isPremier(5))
+        console.log('6', isPremier(6))
+        console.log('7', isPremier(7))
+        console.log('8', isPremier(8))
+        console.log('9', isPremier(9))
+        console.log('10', isPremier(10))
+        console.log('11', isPremier(11))
+        console.log('12', isPremier(12))
+        console.log('12', isPair(12))
+        console.log('12', isPair(11))
+        console.log('12', isImPair(12))
+        console.log('12', isImPair(11))
+        console.log('12', isImPair2(12))
+        console.log('12', isImPair2(11))
+
+    </script>
+</head>
+
+<body>
+    <h1>Simple HTML Page</h1>
+
+</body>
+
+</html>
+
+---------------------
+
+ const isPalindrome = (word) => {
+
+            let i = 0
+
+            let j = word.length - 1
+
+            while (i <= j) {
+                
+                if (word.toUpperCase().charAt(i) !== word.toUpperCase().charAt(j)) {
+                    return false
+                }
+                i++;
+                j--;
+            } 
+            return true
+        }
+        ------------------------
+
+        function isPalindrome(str){
+        //reverse
+        //split
+        //join
+        //toUppercase
+        }
